@@ -1,0 +1,2 @@
+# C_Study_XiaoMeiLaoShi
+跟着小美老师学习她的2022版C教程，挑战30天完成C基础学习
