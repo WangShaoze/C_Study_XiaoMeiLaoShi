@@ -18,11 +18,9 @@ void del_space(char * s1)
 	while (*s1){
 		if(*s1 != ' '){
 			*s2 = *s1;
-			s1++;
 			s2++;
-		}else{
-			s1++;
 		}
+		s1++;
 	}
 	
 	*s2 = '\0';

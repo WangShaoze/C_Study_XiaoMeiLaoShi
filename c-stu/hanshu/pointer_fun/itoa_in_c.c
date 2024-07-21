@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-char * itoa(int n);
+char * itoa(int n);  // 将字符串类型的数字转化为真正的数字
 
 int main(int args, const char *argv[]){
 	int n;
@@ -21,7 +21,7 @@ char * itoa(int n){
 	while(n){
 		r = n % 10;
 		n /= 10;
-		p[i] = r+'0';
+		p[i] = r+'0';  // '0' = 48; 在将字符数字转化为真正的数字时使用, 如: '1' = 1+48;
 		i++;	
 	}
 	p[i] = '\0';      // 静态数组默认值就是\0, 这句代码其实可以不写。

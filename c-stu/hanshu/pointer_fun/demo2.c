@@ -21,9 +21,8 @@ char * del_space(char * s){
 		if(*s != ' '){
 			*q = *s;
 			q++;
-			s++;
-		}else
-			s++;
+		}
+		s++;
 	}
 	*q = '\0';
 	return r;

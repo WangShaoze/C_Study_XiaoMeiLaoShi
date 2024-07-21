@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-char * itoa(char *p, int n);
+char * itoa(char *p, int n);   // 通过指针p传递用户输入的数字，而不是申请静态变量来传递用户输入字符串
 
 int main(int args, const char *argv[]){
 	int n;

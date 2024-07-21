@@ -2,35 +2,29 @@
 
 int deal_with(char *);
 
-
 int main(int args, const char *argv[]){
-	char str[] = "how Are you 9967"; 
-	int n;    // xiao xie zi mu de ge shu.
+	char str[] = "Can I do? 9967";
+	int n;  // 统计小写字母的数量
 
-	// computer the number of a
-	// A -> a
+	// 实现统计小写字母的数量并且将小写字母转化位大写字母
 	n = deal_with(str);
-	printf("n=%d\n", n);
-	printf("str=%s\n", str);
+	printf("n=%d, s=%s\n", n, str);
 
 	return 0;
 }
 
+int deal_with(char * s){
+	int num;
 
-int deal_with(char *s)  // char *s = str
-{
-	int geshu;
 	
-	//while(*s != '\0')
-	while(*s)
+	//while (*s)
+	while (*s!='\0')
 	{
-		if (*s<= 'z' && *s >= 'a'){
-			*s = *s-32;
-			geshu++;	
-		}else if (*s<= 'Z' && *s >= 'A'){
-			*s = *s+32;
-		}	
+		if (*s<='z' && *s >= 'a'){
+			num++;
+			*s = *s-32;   
+		}
 		s++;
-	}	
-	return geshu;
+	}
+	return num;
 }
