@@ -1,23 +1,25 @@
 #include<stdio.h>
 #include<ctype.h>
 
-int main(int args, char *argv[]){
-	char str1[] = "Hello World";
-	char str2[] = "Hello World";
-	char *p;
+int main(int args, const char *argv[]){
+	char s1[] = "Hello world";
+	char s2[] = "Hello world";
+	char *p, *q;
 
-	p = str1;
+	p = s1;
+	q = s2;
+	printf("p=%p, q=%p\n", p, q);
+
 	if(isalpha(*p)){
-		if(isupper(*p)){
-			*p  = tolower(*p);
-		}else{
+		if (isupper(*p))
+			*p = tolower(*p);
+		else
 			*p = toupper(*p);
-		}
 	}
-	printf("%d %s\n", p, p);
+	printf("%p %s\n", p, p);
 
-	p = str2;
-	printf("%d %s\n", p, p);
+	p = s2;
+	printf("%p %s\n", p, p);
 
 	return 0;
 }

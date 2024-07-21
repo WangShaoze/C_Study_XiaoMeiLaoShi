@@ -4,18 +4,15 @@ int main(int args, char *argv[]){
 	int m =10;
 	int *p;
 	int **q;
-	
-	p = &m;
 
+	p = &m;
 	q = &p;
 
-	printf("p -> %p --> %d\n", p, *p);
-	printf("q -> %p --> %x\n", q, *q);
+	printf("p=%p q=%p\n", p, q);
+	printf("p=%p q=%p\n", *q, q);
 
-	printf("q -> %p --> %d\n", q, **q);
-
-
-	printf("%p %p\n", q, q+1);
+	// 通过p指针和q指针获取m的值
+	printf("p get m:%d, q get m:%d, m get m:%d\n", *p, **q, m);
 
 	return 0;
 }

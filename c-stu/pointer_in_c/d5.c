@@ -8,8 +8,8 @@ int main(int args, char *argv[]){
 	p = &a[4]; 
 	printf("%p %d\n", p, *p);  
 	
-	//q = p--;
-	q = --p;
+	q = p--;
+	//q = --p;
 
 	printf("%p %d\n", p, *p);  
 	printf("%p %d\n", q, *q);  
