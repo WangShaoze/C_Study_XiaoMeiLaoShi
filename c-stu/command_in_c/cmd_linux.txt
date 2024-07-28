@@ -110,6 +110,15 @@ gcc -o hello hello.c
 	-Wall	
 	./hello       运行编译好的文件输出结果
 
+# 1.预编译
+# 2.编译
+# 3.汇编
+# 4.链接
+
+gcc -c seqlist.c -o seqlist.o  // 输出.o文件时，经历了前面3部
+gcc seqlist.o test.o -o test.out       // 再次编译输出test.out 可执行文件 
+
+gcc seq*.c -o test.out    // 直接输出可执行文件
 
 ln -s 文件名或者目录名 目标文件名或者目录名                   【创建软链接，相当于Windows下的快捷方式】
 
